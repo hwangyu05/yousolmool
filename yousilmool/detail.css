@@ -1,0 +1,44 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.label-title {
+    color: #c71c1c;
+    font-weight: 600;
+}
+
+.input-label {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.input-box {
+    border: 2px solid #000;
+    border-radius: 0;
+}
+
+.text-box {
+    border: 2px solid #000;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.memory-text {
+    border: none;
+    resize: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.image-box {
+    border: 2px solid #000;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.uploaded-preview {
+    width: 100%;
+    border-radius: 6px;
+}

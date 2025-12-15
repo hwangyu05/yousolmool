@@ -1,0 +1,143 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+    background-color: #ffffff;
+}
+
+/* 상단 네이비 바 */
+.top-bar {
+    width: 100%;
+    height: 25px;
+    background-color: #131259;  /* main color */
+}
+.search-icon {
+    background-color: #ffffff;
+    border: 2px solid #131259;
+    border-left: none;
+    cursor: pointer;
+}
+
+.search-box {
+    border: 2px solid #131259;
+    border-right: none;
+    border-radius: 0;
+}
+
+
+/* 타이틀 */
+.subtitle {
+    font-size: 20px;
+    color: #3E5512; /* sub color */
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+/* 검색창 */
+.search-box {
+    border-radius: 0;
+    border: 2px solid #131259;
+}
+
+/* 카드 */
+.custom-card {
+    border: 2px solid #131259;
+    border-radius: 0;
+    background-color: #edeabe; /* sub color */
+}
+
+.thumb {
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+    border: 1px solid #131259;
+}
+
+.card-title {
+    font-size: 14px;
+    color: #000;
+}
+
+/* ===== editorial magazine layout (8 images) ===== */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 24px;
+}
+
+/* 공통 */
+.editorial-grid .cell {
+  overflow: hidden;
+}
+
+.editorial-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.editorial-grid img:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* 역할별 크기 */
+.editorial-grid .hero {
+  grid-column: 2 / span 3;
+  grid-row: span 2;
+}
+
+.editorial-grid .tall {
+  grid-row: span 2;
+}
+
+.editorial-grid .wide {
+  grid-column: span 2;
+}
+
+.editorial-grid .small {
+  grid-row: span 1;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .editorial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .editorial-grid .hero,
+  .editorial-grid .tall,
+  .editorial-grid .wide {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+.editorial-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 2fr 1fr 1fr !important;
+  grid-auto-rows: 200px !important;
+  gap: 30px !important;
+}
+
+.editorial-grid .hero {
+  grid-column: 2 / span 2 !important;
+  grid-row: span 2 !important;
+}
+
+.editorial-grid .tall {
+  grid-row: span 2 !important;
+}
+
+.editorial-grid .wide {
+  grid-column: span 2 !important;
+}
+
+
+
+
+
